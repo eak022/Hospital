@@ -7,6 +7,8 @@
         {
             $strP_id = $_GET["P_id"];
         }
+        echo $strP_id;
+        
         require "connect.php";
         $sql ="SELECT * FROM patient,permissions WHERE P_id = ?";
         $params = array($strP_id);
